@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+// import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Dashboard from "./Components/Dashboard";
 import NewBlog from "./Components/NewBlog";
@@ -14,7 +15,7 @@ export default function App() {
     <BrowserRouter>
       <Routes>
           <Route index element={<Dashboard />} />
-          <Route path="newBlog" element={<NewBlog />} />
+          <Route path="newBlog" element={<NewBlog/>} />
           <Route path="show" element={<Show/>}/>
           <Route path="Blog1" element={<Blog1/>}/>
           <Route path="Blog2" element={<Blog2/>}/>
